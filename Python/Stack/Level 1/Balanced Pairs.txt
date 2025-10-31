@@ -1,0 +1,12 @@
+Purpose of this program is to make sure that every grouping character has a matching opening symbol. 
+
+- Methodology 
+I used a hash map (dict) to dynamically map closing symbols to a opening symbol. If there is a symbol without its matching pair invalid is printed. This process will loop till there is no more items to pop on the stack.
+
+*Incorporating invarients - 
+I recently came across the idea of invarients (something that will always need to be true about a object) and used that for this approach. 
+There is no need to make key value pairs for the opening characters in a STACK implemented data structure. Due to the LIFO nature of stacks, I only needed to be wary of the closing symbols.
+
+Improvements - 
+-Readability match case statements + if statements looks awful to look at. I can probably do this same approach but with much cleaner code 
+-I also need to write a little bit more so that the extra openings and consecutive pairs of the same symbol are valid. 
